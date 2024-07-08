@@ -1,0 +1,25 @@
+Obj geral
+conhecer os operadores de identidade e como funcionam
+
+Percurso
+ETAPA 01 - conhecendo os operadores de identidade
+
+O QUE SÃO?
+sao operadores utilizados para comparar se os dois objetos  testados ocupam a mesma posição na memoria
+
+exemplo
+
+curso = "Curso de Python"
+nome_curso = curso
+saldo, limite = 200, 200
+
+curso is nome_curso
+True
+
+curso is not nome_curso
+False
+
+saldo is limite
+True
+
+MAO NA MASSA

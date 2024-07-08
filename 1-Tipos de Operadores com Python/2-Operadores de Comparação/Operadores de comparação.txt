@@ -1,0 +1,47 @@
+Obj geral - Oque são operadores de comparação e como usar
+PERCURSO 
+ETAPA 01 - Conhecendo os operadores de comparação
+
+ETAPA 01
+Oque são?
+São operadores utilizados para comparar dois valores
+
+IGUALDADE
+saldo = 450
+saque = 200
+
+print(saldo == saque)
+False (sempre booleano)
+
+DIFERENÇA
+saldo = 450
+saque = 200
+
+print(saldo != saque)
+True
+
+MAIOR QUE / MAIOR OU IGUAL
+saldo = 450
+saque = 200
+
+print(saldo > saque)
+True
+
+print(saldo >= saque)
+True
+
+MENOR QUE / MENOR OU IGUAL
+saldo = 450
+saque = 200
+
+print(saldo < saque)
+False
+
+print(saldo <= saque)
+False
+
+MAO NA MASSA
+
+
+
+

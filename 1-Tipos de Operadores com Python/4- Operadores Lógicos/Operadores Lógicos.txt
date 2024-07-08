@@ -1,0 +1,73 @@
+OBJ GERAL - entender os operadores Lógicos e como eles funcionam
+
+Percurso
+ETAPA 1 - CONHECENDO OS OPERADORES 
+
+O que são?
+São operadores utilizados em um conjunto com os operadores de comparação, para montar uma expressão lógica.
+Quando um operador de comparação é utilizado, o resultado retornado é um booleano, dessa forma podemos combinar operadores de comparação com os operadores lógicos.
+Exemplo:
+op_comparacao + op_logico + op_comparacao...N...
+
+Exemplo
+saldo = 1000
+saque = 200
+limite = 100
+
+saldo >= saque
+true
+
+saque <= limite
+false
+
+
+OPERADOR E (AND)
+saldo = 1000
+saque = 200
+limite = 100
+
+saldo >= saque and saque <= limite
+false
+(as duas tem que ser veradeiras para ser verdadeiro, se tiver uma errada altomaticamente é false)
+
+
+OPERADOR OU (OR)
+saldo = 1000
+saque = 200
+limite = 100
+
+saldo >= saque or saque <= limite
+true
+(Se entre as opções tiver uma verdadeira, entao é true, se todas forem falsas ai da false)
+
+
+OPERADOR NEGAÇÃO (NOT)
+(pense que é o inverso da verdade)
+contratos_emergencia = []
+
+not 1000 > 1500
+true
+
+not contratos_emergencia
+true
+
+not "saque 1500;"
+false
+
+not ""
+true
+
+PARENTESES
+saldo = 1000
+saque = 250
+limite = 200
+conta_especial = true
+
+saldo >= saque and saque<= limite or conta_especial and saldo >= saque
+true
+
+(saldo >= saque and saque <=limite) or (conta_especial and saldo >= saque)
+true
+
+(use parenteses para facilitar a leitura)
+

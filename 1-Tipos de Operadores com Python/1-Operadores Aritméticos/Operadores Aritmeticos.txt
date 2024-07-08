@@ -1,0 +1,78 @@
+Objetivo Geral - Oque são operadores aritméticos e como utiliza-los
+Percursos - 
+Etapa 01 - Conhecendo os operadores aritméticos
+Etapa 02 - Precedência de Operadores
+
+ETAPA 01
+O que são?
+Os operadores aritméticos executam operações matemáticas, como adição subtração com operandos.
+
+ ADIÇÃO, SUBTRAÇÃO E MULTIPLICAÇÃO
+
+#ADIÇÃO
+print(1+2)
+3
+
+#SUBTRAÇÃO
+print(10-2)
+8
+
+#MULTIPLICAÇÃO
+print(4*3)
+12
+
+DIVISÃO E DIVISÃO INTEIRA
+
+#DIVISÃO
+print(12 / 3)
+4.0
+
+#DIVISÃO INTEIRA
+print(12 // 2)
+6
+
+MODULO E EXPONENCIAÇÃO
+
+#MODULO (resto de divisão)
+print(10 % 3)
+1
+
+#EXPONENCIAÇÃO
+print(2 ** 3)
+8
+
+ETAPA 02 - PRECEDENCIA DOS OPERADORES
+
+NA MATEMATICA
+Existe uma regra que indica quais operações devem ser executadas primeiro. Isso é útil pois ao analisar uma expressão, a depender da ordem das operações o valor pode ser diferente:
+
+x = 10 - 5 * 2
+x é igual a 10 ou a 0?
+
+PYTHON segue a logica da matematica
+A definição indica a seguinte ordem correta:
+-PARENTESES
+-EXPOENTES
+-MULTIPLICAÇÕES E DIVISÕES (da esquerda para direita)
+- SOMAS E SUBTRAÇÕES(da esq para direita)
+
+EXEMPLOS
+print(10 - 5 * 2)
+0
+
+print((10 - 5) * 2)
+10
+
+print( 10 ** 2 * 2)
+200
+
+print( 10 ** (2 * 2))
+10000
+
+print(10 / 2 *4)
+20.0
+
+MAO NA MASSA
+
+
+

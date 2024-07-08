@@ -1,0 +1,56 @@
+OBj geral - Oque sao operadores de atribuição e como utiliza-los
+
+Percurso -
+ETAPA 01 - Conhecendo os operadores de atribuição
+
+etapa 01
+O QUE SÃO?
+Sao operadores utilizados para definir o valor inicial ou sobrescrever o valor de uma variavel
+
+ATRIBUIÇÃO SIMPLES
+saldo = 500
+print(saldo)
+500
+
+ATRIBUIÇÃO COM ADIÇÃO
+saldo = 500
+saldo += 200
+print(saldo)
+700
+
+ATRIBUIÇÃO COM SUBTRAÇÃO
+saldo = 500
+saldo -= 200
+print(saldo)
+300
+
+ATRIBUIÇÃO COM MULTIPLICAÇÃO
+saldo = 500
+saldo *= 2
+print(saldo)
+1000
+
+ATRIBUIÇÃO COM DIV E COM DIVISAO INTEIRA
+saldo = 500
+saldo /= 5
+print(saldo)
+100.00
+
+saldo = 500
+saldo //= 5
+print(saldo)
+100
+
+ATRIBUIÇÃO COM MÓDULO
+saldo = 500
+saldo %= 480
+print(saldo)
+20
+
+ATRIBUIÇÃO COM EXPONENCIAÇÃO
+saldo = 80
+saldo **= 2
+print(saldo)
+6400
+
+MAO NA MASSA
