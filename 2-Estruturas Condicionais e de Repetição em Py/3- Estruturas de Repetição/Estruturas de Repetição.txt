@@ -1,0 +1,121 @@
+Objetivo Geral
+Conhecer as estruturas de repetição for e while e quando utilizá-las.
+
+percurso -
+ETAPA 01 -  O que são estruturas de repetição?
+ETAPA 02 - Comando for e a função built-in range
+ETAPA 03 - Comando while
+
+ETAPA 01 -
+OQUE SAO ESTRUTURAS DE REPETIÇÃO?
+São estruturas utilizadas para repetir um trecho de código um determinado número de vezes. Esse número pode ser conhecido previamente ou determinado através de uma expressão lógica.
+
+EXEMPLO SEM REPETIÇÃO
+# Receba um número do teclado e exiba os 2 números seguintes
+
+a = int(input("Informe um número inteiro: "))
+print(a)
+
+a += 1
+print(a)
+
+a += 1
+print(a)
+
+
+EXEMPLO COM REPETIÇÃO
+# Receba um número do teclado e exiba os 2 números seguintes
+
+a = int(input("Informe um número inteiro: "))
+print(a)
+repita 2 vezes:
+    a += 1
+    print(a)
+
+ETAPA 02 - COMANDO FOR E A FUNÇÃO BUILT-IN range
+COMANDO FOR
+O comando for é usado para percorrer um objeto iterável. Faz sentido usar for quando sabemos o número exato de vezes que nosso bloco de código deve ser executado, ou quando queremos percorrer um objeto iterável.
+
+FOR (para)
+texto = input("Informe um texto: ")
+VOGAIS = "AEIOU"
+
+
+for letra in texto:
+	if letra.upper() in VOGAIS:
+		print(letra, end="")
+
+print()  # adiciona uma quebra de linha
+
+FOR/ELSE (para/outro)
+texto = input("Informe um texto: ")
+VOGAIS = "AEIOU"
+
+
+for letra in texto:
+	if letra.upper() in VOGAIS:
+		print(letra, end="")
+else:
+    print()  # adiciona uma quebra de linha
+
+
+FUNÇÃO range(faixa)
+Range é uma função built-in do Python, ela é usada para produzir uma sequência de números inteiros a partir de um ínicio (inclusivo) para um fim (exclusivo). Se usarmos range(i, j) será produzido: 
+i, i+1, i+2, i+3, ..., j-1.
+Ela recebe 3 argumentos: stop (obrigatório), start (opcional) e step opcional.
+
+# range(stop) -. range object
+# range(start, stop [, step]) -> range object
+
+list(range(4))
+>>> [0, 1, 2, 3]
+
+
+UTILIZANDO RANGE COM FOR
+for numero in range(0, 11):
+    print(numero, end=" ")
+
+>>> 0 1 2 3 4 5 6 7 8 9 10
+
+
+# exibindo a tabuada do 5
+for numero in range(0, 51, 5):
+    print(numero, end=" ")
+
+>>> 0 5 10 15 20 25 30 35 40 45 50
+
+
+ETAPA 03 
+COMANDO WHILE(enquanto)
+O comando while é usado para repetir um bloco de código várias vezes. Faz sentido usar while quando não sabemos o número exato de vezes que nosso bloco de código deve ser executado.
+
+opccao = -1
+
+
+while opcao != 0:
+    opcao = int(input("[1] Sacar \n[2] Extrato \n[0] Sair \n: "))
+
+    if opcao == 1:
+        print("Sacando...")
+    elif opcao == 2:
+        print("Exibindo o extrato...")
+
+
+WHILE/ELSE
+opccao = -1
+
+
+while opcao != 0:
+    opcao = int(input("[1] Sacar \n[2] Extrato \n[0] Sair \n: "))
+
+    if opcao == 1:
+        print("Sacando...")
+    elif opcao == 2:
+        print("Exibindo o extrato...")
+else:
+        print("Obrigado por usar nosso Sistema bancário, até logo!")
+
+
+
+
+

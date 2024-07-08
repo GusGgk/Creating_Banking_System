@@ -1,0 +1,47 @@
+Objetivo Geral
+
+Aprender como o interpretador Python utiliza a indentação do código para delimitar os blocos de comandos.
+
+ETAPA 01 - Indetação e os blocos de comandos
+
+O PAPEL DA INDENTAÇÃO
+- A ESTÉTICA
+Identar código é uma forma de manter o código mais legível e manutenível. Mas em Python ela exerce um segundo papel, através da indentação o interpretador consegue determinar onde um bloco de comando inicia e onde ele termina.
+
+BLOCO DE COMANDO
+As linguagens de programação costumam utilizar caracteres ou palavaras reservadas para terminar o inicio e o fim do bloco. Em Java e C por exemplo, utilizamos chaves:
+
+BLOCO EM JAVA
+void sacar(double valor) { //inicio do bloco do método
+
+	if (this.saldo >= valor) { // inicio do bloco do if
+		this.saldo -= valor;
+   	} // fim do bloco do if
+} // fim do bloco do método
+
+BLOCO EM JAVA SEM FORMATAR
+void sacar(double valor) { // inicio do bloco de método
+if (this.saldo >= valor) { // inicio do bloco do if
+this.saldo -= valor;
+} //fim do bloco do if
+} //fim do bloco do método
+
+UTILIZANDO ESPAÇOS
+Existe uma convenção em Python, que define as boas praticas para escrita do código de lingauem. Nesse documento é indicado utilizar 4 espaços em branco por nível de indentação, ou seja, a cada novo bloco adicionamos 4 novos espaços em branco.
+Inicio do bloco em pthon é (:)
+
+BLOCO EM PYTHON
+def sacar(self, valor: float) -> None: # inicio do bloco do método
+
+    if self.saldo >= valor: # inicio do bloco do if
+	self.saldo -= valor
+    #fim do bloco de if
+#fim do bloco do método
+
+ISSO NAO FUNCIONA EM PYTHON
+def sacar(self,valor: float) ->None:  # inicio do bloco do método
+if self.saldo >= valor: # inicio do bloco do if
+self.saldo -=valor
+#fim do bloco de if
+#fim do bloco do método
+
