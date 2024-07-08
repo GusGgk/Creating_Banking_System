@@ -1,0 +1,72 @@
+GENERAL OBJ - understand Logical operators and how they work
+
+Route
+STAGE 1 - GETTING TO KNOW THE OPERATORS 
+
+What are?
+They are operators used in a set with comparison operators, to assemble a logical expression.
+When a comparison operator is used, the result returned is a Boolean, so we can combine comparison operators with logical operators.
+Example:
+op_comparacao + op_logico + op_comparacao...N...
+
+Example
+balance = 1000
+withdrawal = 200
+limit = 100
+
+balance >= withdrawal
+true
+
+withdrawal <= limit
+false
+
+
+AND OPERATOR
+balance = 1000
+withdrawal = 200
+limit = 100
+
+balance >= withdrawal and withdrawal <= limit
+false
+(both have to be true to be true, if there is one wrong it is automatically false)
+
+
+OR OPERATOR (OR)
+balance = 1000
+withdrawal = 200
+limit = 100
+
+balance >= withdrawal or withdrawal <= limit
+true
+(If among the options there is one true, then it is true, if they are all false then false)
+
+
+NEGATION OPERATOR (NOT)
+(think it's the opposite of the truth)
+emergency_contracts = []
+
+not 1000 > 1500
+true
+
+not emergency_contracts
+true
+
+not "withdrawal 1500;"
+false
+
+not ""
+true
+
+PARENTHESES
+balance = 1000
+withdrawal = 250
+limit = 200
+special_account = true
+
+balance >= withdrawal and withdrawal<= limit or special_conta and balance >= withdrawal
+true
+
+(balance >= withdrawal and withdrawal <=limit) or (special_account and balance >= withdrawal)
+true
+
+(use parentheses to make reading easier)

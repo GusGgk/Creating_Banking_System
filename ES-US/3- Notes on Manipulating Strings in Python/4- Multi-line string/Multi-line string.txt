@@ -1,0 +1,27 @@
+STEP 04
+
+INTRODUCTION
+Multi-line strings are defined by informing 3 single or double quotes during assignment
+They can occupy several lines of code and all white spaces are included in the final string
+
+TRIPLE STRING
+name = "Gustavo"
+
+message = f'''
+ Hello my name is {name},
+I'm learning Python
+'''
+
+ Hello my name is Gustavo,
+I'm learning Python
+
+name = "Gustavo"
+
+message = f'''
+ Hello my name is {name},
+I'm learning Python
+ This message has different indentations.
+'''
+Hello my name is {name},
+I'm learning Python
+ This message has different indentations.

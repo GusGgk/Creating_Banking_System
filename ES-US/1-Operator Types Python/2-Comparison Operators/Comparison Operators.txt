@@ -1,0 +1,46 @@
+General Obj - What are comparison operators and how to use them
+ROUTE 
+STEP 01 - Knowing the comparison operators
+
+STAGE 01
+What are?
+Operators are used to compare two values
+
+EQUALITY
+balance = 450
+withdrawal = 200
+
+print(balance == withdrawal)
+False (always boolean)
+
+DIFFERENCE
+balance = 450
+withdrawal = 200
+
+print(balance != withdrawal)
+True
+
+GREATER THAN / GREATER OR EQUAL
+balance = 450
+withdrawal = 200
+
+print(balance > withdrawal)
+True
+
+print(balance >= withdrawal)
+True
+
+LESS THAN / LESS OR EQUAL
+balance = 450
+withdrawal = 200
+
+print(balance < withdrawal)
+False
+
+print(balance <= withdrawal)
+False
+
+HANDS-ON
+
+
+

@@ -1,0 +1,75 @@
+General Objective - What are arithmetic operators and how to use them
+Routes - 
+Step 01 - Knowing the arithmetic operators
+Step 02 - Operator Precedence
+
+STAGE 01
+What are?
+Arithmetic operators perform mathematical operations such as addition subtraction with operands.
+
+ ADDITION, SUBTRACTION AND MULTIPLICATION
+
+#ADDITION
+print(1+2)
+3
+
+#SUBTRACTION
+print(10-2)
+8
+
+#MULTIPLICATION
+print(4*3)
+12
+
+DIVISION AND WHOLE DIVISION
+
+#DIVISION
+print(12 / 3)
+4.0
+
+#ENTIRE DIVISION
+print(12 // 2)
+6
+
+MODULE AND EXPONENTIATION
+
+#MODULE (remainder of division)
+print(10 % 3)
+1
+
+#EXPONENTIATION
+print(2 ** 3)
+8
+
+STAGE 02 - PRECEDENCE OF OPERATORS
+
+IN MATHEMATICS
+There is a rule that indicates which operations must be performed first. This is useful because when analyzing an expression, depending on the order of operations, the value may be different:
+
+x = 10 - 5 * 2
+Is x equal to 10 or 0?
+
+PYTHON follows the logic of mathematics
+The definition indicates the following correct order:
+-PARENTHESES
+-EXPONENTS
+-MULTIPLICATIONS AND DIVISIONS (from left to right)
+- ADD AND SUBTRACTIONS (from left to right)
+
+EXAMPLES
+print(10 - 5 * 2)
+0
+
+print((10 - 5) * 2)
+10
+
+print(10 ** 2 * 2)
+200
+
+print(10 ** (2 * 2))
+10000
+
+print(10 / 2 *4)
+20.0
+
+HANDS-ON

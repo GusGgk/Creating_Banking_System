@@ -1,0 +1,56 @@
+General OBj - What are assignment operators and how to use them
+
+Route -
+STEP 01 - Knowing the assignment operators
+
+step 01
+WHAT ARE?
+They are operators used to define the initial value or overwrite the value of a variable
+
+SIMPLE ASSIGNMENT
+balance = 500
+print(balance)
+500
+
+ASSIGNMENT WITH ADDITION
+balance = 500
+balance += 200
+print(balance)
+700
+
+ASSIGNMENT WITH SUBTRACTION
+balance = 500
+balance -= 200
+print(balance)
+300
+
+ASSIGNMENT WITH MULTIPLICATION
+balance = 500
+balance *= 2
+print(balance)
+1000
+
+ASSIGNMENT WITH DIV AND WITH WHOLE DIVISION
+balance = 500
+balance /= 5
+print(balance)
+100.00
+
+balance = 500
+balance //= 5
+print(balance)
+100
+
+ASSIGNMENT WITH MODULE
+balance = 500
+balance %= 480
+print(balance)
+20
+
+ASSIGNMENT WITH EXPONENTIATION
+balance = 80
+balance **= 2
+print(balance)
+6400
+
+HANDS-ON

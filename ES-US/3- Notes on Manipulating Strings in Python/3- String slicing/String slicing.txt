@@ -1,0 +1,39 @@
+STAGE 03
+
+INTRODUCTION
+String slicing is a technique used to return substrings (parts of the original string),
+informing start(start), end(stop) and step(step): [start:stop[,step]]
+
+name = "Gustavo Giacoia Kumagai"
+
+name[0]
+G
+
+name[:7]
+"Gustavo"
+
+name[7:]
+"Giacoia Kumagai"
+
+name[8:15]
+"Giacoia"
+
+name[8:15:2]
+"Gaoa"
+
+name[:]
+"Gustavo Giacoia Kumagai"
+
+name[:: -1]
+(inverse name)
+Enviar feedback
+
+
+nome[:]
+"Gustavo Giacoia Kumagai"
+
+nome[:: -1]
+(nome inverso)
+
+
+

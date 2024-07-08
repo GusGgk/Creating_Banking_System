@@ -1,0 +1,46 @@
+Main goal
+
+Learn how the Python interpreter uses code indentation to delimit command blocks.
+
+STEP 01 - Indentation and command blocks
+
+THE ROLE OF INDENTATION
+- AESTHETICS
+Indenting code is a way to keep code more readable and maintainable. But in Python it plays a second role, through indentation the interpreter can determine where a command block starts and where it ends.
+
+COMMAND BLOCK
+Programming languages ​​usually use reserved characters or words to end the beginning and end of the block. In Java and C, for example, we use keys:
+
+BLOCK IN JAVA
+void withdraw(double value) { //start of method block
+
+	if (this.balance >= value) { // start of the if block
+		this.balance -= value;
+   	} // end of if block
+} // end of method block
+
+BLOCK IN JAVA WITHOUT FORMATTING
+void withdraw(double value) { // start of the method block
+if (this.balance >= value) { // start of the if block
+this.balance -= value;
+} //end of if block
+} //end of method block
+
+USING SPACES
+There is a convention in Python that defines good practices for writing language code. In this document, it is recommended to use 4 blank spaces per indentation level, that is, for each new block we add 4 new blank spaces.
+Start of the block in pthon is (:)
+
+BLOCK IN PYTHON
+def sacar(self, value: float) -> None: # start of method block
+
+    if self.saldo >= value: # start of the if block
+	self.balance -= value
+    #end of if block
+#end of method block
+
+THIS DOESN'T WORK IN PYTHON
+def sacar(self,valor: float) ->None: # start of method block
+if self.saldo >= value: # start of the if block
+self.saldo -=value
+#end of if block
+#end of method block

@@ -1,0 +1,56 @@
+General Obj
+Know useful methods for manipulating string objects, how to interpolate variable values ​​and understand how slicing works.
+
+Route -
+
+STEP 01 - KNOWING USEFUL METHODS OF THE string CLASS
+
+
+STAGE 01
+Introduction
+Python's string class is famous for being rich in methods and having a very easy to work with interface.
+
+In some languages, manipulating character sequences is not a trivial task, well, in Python this task is very simple.
+
+
+
+UPPERCASE, LOWERCASE AND TITLE
+
+course = "pYtHon"
+
+print(course.upper())
+PYTHON 
+
+print(course.lower())
+python
+
+print(course.title())
+Python 
+
+
+
+ELIMINATING WHITE SPACE
+course = " Python "
+
+print(course.strip())
+"Python"
+
+print(course.lstrip())
+"Python"
+
+print(course.rstrip())
+"Python"
+
+
+
+JOINTS AND CENTRALIZATION
+course = "Python"
+
+print(curso.center(10, "#"))
+"##Python##"
+
+print(".".join(course))
+"P.y.t.h.o.n"
+
+hands-on
+

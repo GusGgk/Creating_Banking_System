@@ -1,0 +1,25 @@
+General obj
+know identity operators and how they work
+
+Route
+STEP 01 - getting to know the identity operators
+
+WHAT ARE?
+are operators used to compare whether the two tested objects occupy the same position in memory
+
+example
+
+course = "Python Course"
+course_name = course
+balance, limit = 200, 200
+
+course is course_name
+True
+
+course is not course_name
+False
+
+balance is limit
+True
+
+HANDS-ON

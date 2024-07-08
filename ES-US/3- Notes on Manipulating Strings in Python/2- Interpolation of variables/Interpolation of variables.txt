@@ -1,0 +1,66 @@
+STAGE 02
+INTERPOLATION OF VARIABLES
+
+INTRODUCTION
+In Python we have 3 ways to interpolate variables in strings, the first is to use the % sign
+the second is using the format method
+and the last one is using f strings.
+
+The first way is currently not recommended and its use in Python 3 is rare, for this reason we will focus on the last two.
+
+OLD STYLE %
+name="Guilherme"
+age = 28
+profession = "Programmer"
+language = "Python"
+
+print("Hello, my name is %s. I am %d years old, I work with %s and I am enrolled in the %s course." % (name, age, profession, language))
+
+Hi, my name is Guilherme, I'm 28 years old, I work as a programmer and I'm enrolled in the Python course.
+(don't use this %)
+
+FORMAT METHOD {}
+name="Guilherme"
+age = 28
+profession = "Programmer"
+language = "Python"
+
+(this first option is the least important)
+print("Hello, my name is {}. I'm {} years old, I work with {} and I'm enrolled in the {} course." .format (name, age, profession, language))
+
+print("Hello, my name is {3}. I'm {2} years old, I work with {1} and I'm enrolled in the {0} course." .format (language, ptofissao, age, name))
+
+
+
+print("Hello, my name is {name}. I'm {age} years old, I work with {profession} and I'm enrolled in the {language} course.".format(name=name, age=age, profession=profession , language=language))
+
+print("Hello, my name is {name}. I'm {age} years old, I work with {profession} and I'm enrolled in the {language} course.".format(**person))
+
+Hello, my name is Guilherme, I'm 28 years old, I work as a programmer and I'm enrolled in the Python course.
+
+
+F STRINGS METHOD
+(the more visibly better)
+name="Guilherme"
+age = 28
+profession = "Programmer"
+language = "Python"
+
+print(f"Hello, my name is {name}. I'm {age} years old, I work as {profession} and I'm studying {language}.")
+
+Hi, my name is Guilherme, I'm 28 years old, I work as a programmer and I'm enrolled in the Python course.
+
+
+
+FORMAT STRINGS WITH F-STRINGS
+PI = 3.14159
+
+print(f"PI value: {PI:.2f}")
+"PI Value: 3.14"
+
+print(f"PI value: {PI:10.2f}")
+"PI Value: 3.14"
+
+
+
+

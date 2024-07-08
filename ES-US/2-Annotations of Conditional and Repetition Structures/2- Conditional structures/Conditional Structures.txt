@@ -1,0 +1,81 @@
+GENERAL OBJ - what are conditional structures and how to use them
+
+ROUTE-
+STEP 01- IF/IF-ELSE/ELIF
+STEP 02 - NESTED IF
+STAGE 03 - IF TERNARY
+
+STAGE 01 - IF/IF-ELSE/ELIF
+
+WHAT ARE?
+The conditional structure allows control flow deviation when certain logical expressions are met
+
+IF (IF)
+To create a simple conditional structure, composed of a single branch, we can use the reserved word if. The command will test the logical expression, and in case of a true return, the actions present in the if code block will be executed.
+
+Example:
+balance = 2000.0
+withdrawal = float(input("Enter the withdrawal amount:"))
+
+if balance >= withdrawal:
+ print("Performing withdrawal!")
+
+if balance < withdrawal:
+ print("Insufficient balance!")
+
+
+IF/ ELSE (IF/OTHER)
+To create a conditional structure with two branches, we can use the reserved words if and else. As we know, if the logical expression tested in the if is true, then the if code block will be executed. Otherwise the else block will be executed.
+
+example:
+balance = 2000.0
+withdrawal = float(input("Enter the withdrawal amount:"))
+
+if balance >= withdrawal:
+ print("Performing withdrawal!")
+else:
+ print("Insufficient balance")
+
+
+IF/ELIF/ELSE
+In some scenarios we want more than two deviations, for this we can use the reserved word elif. The elif is composed of a new logical expression, which will be tested and if it returns true, the elif code block will be executed.
+There is no need to create large conditional structures, as they increase the complexity of the code.
+
+Example:
+option = int(input("enter an option: [1] Withdraw \n[2] Statement: "))
+
+if option == 1:
+ value = float(input("Enter the amount to withdraw: "))
+ #...
+elif option == 2:
+ print("Displaying the extract...")
+else:
+ sys.exit("Invalid option")
+
+
+STEP 02 - NESTED IF
+IF NESTED
+we can create nested conditional structures, to do this simply add if/elif/else structures within the if/elif/else structure code block
+EXAMPLE:
+if normal_count:
+ if balance >= withdrawal:
+ print("Withdrawal successful!")
+ elif withdrawal <= (balance + overdraft):
+ print("Withdrawal made using special check!")
+elif university_account:
+ if balance >= withdrawal:
+ print("Withdrawal successful!")
+ else:
+ print("insufficient balance")
+
+
+STAGE 03 - IF TERNARY
+IF TERNARY
+The ternary if allows you to write a condition in a single line. It is composed of three parts, the first part is the return if the expression returns true,
+the second part is the logical expression
+and the third part is the return if the expression is not met.
+
+Example
+status = "Success" if balance >= withdrawal else "Failed"
+
+print(f"{status} when withdrawing!)

@@ -1,0 +1,20 @@
+GENERAL OBJ - get to know the association operators and see what they are for
+
+Route - stage 01 - getting to know the association operators
+
+WHAT ARE ?
+These are operators used to check whether an object is present in a sequence
+
+Example
+course = "Python Course"
+fruit = ["orange", "grape", "lemon"]
+withdrawals = [1500, 100]
+
+"Python" in course
+True
+
+"apple" not in fruit
+True
+
+200 in withdrawals
+false
