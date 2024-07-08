@@ -1,0 +1,65 @@
+ETAPA 02
+INTERPOLAÇÃO DE VARIAVEIS
+
+INTRODUÇÃO
+em python temos 3 formas de interpolar variaveis em strings, a primeira é usado o sinal %
+a segunda é utilizando o metodo format
+e a ultima é utilizando f strings.
+
+A primeira forma não é atualmente recomendada e seu uso em Python 3 é raro, por esse motivo iremos focar nas duas ultimas.
+
+OLD STYLE % 
+nome ="Guilherme"
+idade = 28
+profissao = "Programador"
+lingaugem = "Python"
+
+print("Olá, me chamo %s. Eu tenho %d anos de idade, trabalho com %s e estou matriculado no curso de %s." % (nome, idade, profissao, linguagem))
+
+Ola me chamo guilherme, tenho 28 anos de idade, trabalho como programador e estou matriculado no curso de python.
+(não use essa %)
+
+MÉTODO FORMAT {}
+nome ="Guilherme"
+idade = 28
+profissao = "Programador"
+lingaugem = "Python"
+
+(essa primeira opção é a menos importante)
+print("Olá, me chamo {}. Eu tenho {} anos de idade, trabalho com {} e estou matriculado no curso de {}." .format (nome, idade, profissao, linguagem))
+
+print("Olá, me chamo {3}. Eu tenho {2} anos de idade, trabalho com {1} e estou matriculado no curso de {0}." .format (linguagem, ptofissao, idade, nome))
+
+
+
+print("Ola, me chamo {nome}. Eu tenho {idade} anos de idade, trabalho com {profissao} e estou matriculado no curso de {lingaugem}.".format(nome=nome, idade=idade, profissao=profissao, liguagem=linguagem))
+
+print("Ola, me chamo {nome}. Eu tenho {idade} anos de idade, trabalho com {profissao} e estou matriculado no curso de {lingaugem}.".format(**pessoa))
+
+Ola me chamo guilherme, tenho 28 anos de idade, trabalho como programador e estou matriculado no curso de python.
+
+
+MÉTODO F STRINGS 
+( o mais visivelmente melhor)
+nome ="Guilherme"
+idade = 28
+profissao = "Programador"
+lingaugem = "Python"
+
+print(f"Olá, me chamo {nome}. Eu tenho {idade} anos de idade, trabalho como {profissao} e estou cursando {linguagem}.")
+
+Ola me chamo guilherme, tenho 28 anos de idade, trabalho como programador e estou matriculado no curso de python.
+
+
+
+FORMATAR STRINGS COM F-STRINGS
+PI = 3.14159
+
+print(f"Valor de PI: {PI:.2f}")
+"Valor de PI: 3.14"
+
+print(f"Valor de PI: {PI:10.2f}")
+"Valor de PI:      3.14"
+
+
+

@@ -1,0 +1,31 @@
+ETAPA 03
+
+INTRODUÇÃO
+fatiamento de strings é uma tecnica utilizada para retornar substrings (partes da string original),
+informando inicio(start),fim(stop) e passo(step): [start:stop[,step]]
+
+nome = "Gustavo Giacoia Kumagai"
+
+nome[0]
+G
+
+nome[:7]
+"Gustavo"
+
+nome[7:]
+"Giacoia Kumagai"
+
+nome[8:15]
+"Giacoia"
+
+nome[8:15:2]
+"Gaoa"
+
+nome[:]
+"Gustavo Giacoia Kumagai"
+
+nome[:: -1]
+(nome inverso)
+
+
+

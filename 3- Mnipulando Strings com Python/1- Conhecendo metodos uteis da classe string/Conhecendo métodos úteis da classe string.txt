@@ -1,0 +1,57 @@
+Obj Geral
+Conhecer métodos uteis para manipular objetos do tipo string, como interpolar valores de variaveis e entender como funciona o fatiamento.
+
+Percurso -
+
+ETAPA 01 - CONHECENDO MÉTODOS UTEIS DA CLASSE string
+
+
+ETAPA 01
+Introdução
+A classe string do python é famosa por ser rica em métodos e possuir uma interface muito facil de trabalhar.
+
+Em algumas linguagens, manipular sequencias de caracteres não pe um trabalho trivial, orem, em python esse trabalho é muito simples.
+
+
+
+MAIÚSCULA, MINUSCULA E TITULO
+
+curso = "pYtHon"
+
+print(curso.upper())
+PYTHON 
+
+print(curso.lower())
+python
+
+print(curso.title())
+Python 
+
+
+
+ELIMINANDO ESPAÇOS EM BRANCO
+curso = "   Python "
+
+print(curso.strip())
+"Python"
+
+print(curso.lstrip())
+"Python "
+
+print(curso.rstrip())
+"     Python"
+
+
+
+JUNÇÕES E CENTRALIZAÇÃO
+curso = "Python"
+
+print(curso.center(10, "#"))
+"##Python##"
+
+print(".".join(curso))
+"P.y.t.h.o.n"
+
+mao na massa
+
+
